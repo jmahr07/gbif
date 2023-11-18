@@ -3,6 +3,10 @@ Data visualization with data from [GBIF](https://www.gbif.org).
 
 ***
 
+## Nov. 2023 - [Gray Whale Migration](graywhale/)
+![Data visualization for the Gray Whale project](graywhale/graywhale.gif)
+Second go with [map_fetch()](https://docs.ropensci.org/rgbif/reference/map_fetch.html) to fetch maps of [GBIF](www.gbif.org) data. This time with an animal known for its migration patterns.
+
 ## Nov. 2023 - [Puffins](puffins/)
 ![Data visualization for the Puffins project](puffins/puffins.gif)
 
