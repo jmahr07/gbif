@@ -3,6 +3,10 @@ Data visualization with data from [GBIF](https://www.gbif.org).
 
 ***
 
+## Nov. 2023 - [Monarch Butterfly Migration](monarchs/)
+![Data visualization for the Monarchs project](monarchs/monarch.gif)
+...another one, adding {ggplot} to create a map *base*, allowing for deeper customization of the text labels. See below for more notes on similar projects.
+
 ## Nov. 2023 - [Gray Whale Migration](graywhale/)
 ![Data visualization for the Gray Whale project](graywhale/graywhale.gif)
 
