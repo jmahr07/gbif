@@ -5,8 +5,9 @@
 
 This was my first attempt at using [`map_fetch()`](https://docs.ropensci.org/rgbif/reference/map_fetch.html), a feature of the [`rgibf`](https://docs.ropensci.org/rgbif/index.html) package, to fetch maps of [GBIF](https://www.gbif.org) data. As `map_fetch()` outputs external pointers of class 'magick-image', I used the [`{magick}`](https://cran.r-project.org/web/packages/magick/vignettes/intro.html) package to handle the image processing, which includes the map annotations and stitching together the different images into gif. 
 
-##Discovering gifs
+## Discovering gifs
 Arriving at the gif format was somewhat of an accident. I had been making some test maps and had grouped two into a single value. Calling that value resulted in a preview slideshow that resembled a gif and got me to look into the `magick` package's `image_animate()` function.
+
 ``` r
 library(rgbif)
 library(magick)
@@ -33,12 +34,14 @@ year_test <- c(jan_test, feb_test)
 
 year_test
 ```
+
 <p align="center">
   <img width="500" height="500" src="https://raw.githubusercontent.com/jmahr07/gbif/main/puffins/year_test.gif">
 </p>
 
-##Map aesthetics
+## Map aesthetics
 In order to make the gif, it is necessary to create a map for each month. Setting values for the various aesthetics makes it easy to adjust all maps at once:
+
 ``` r
 library(rgbif)
 library(magick)
@@ -88,12 +91,14 @@ jan <-
 
 #Repeat for feb, mar, apr, ..., changing the month number and label as needed.
 ```
+
 I make deeper use of such aesthetic values and group them in tibbles in later projects like [Monarchs](/monarchs) and [Terns](/terns).
 
 To indicate the month, it was necessary to add a unique annotation to each map via `image_annotate("[J] F  M  A  M  J  J  A  S  O  N  D ")`. 
 
-##Creating the gif
+## Creating the gif
 Once the maps for each month have been created, they can be grouped into a value and then saved as a gif.
+
 ``` r
 #Group maps
 year <- c(jan, feb, mar, apr, may, jun, jul, aug, sep, oct, nov, dec)
@@ -105,6 +110,7 @@ gif <- image_resize(year, '900') %>%
 
 image_write(gif, "puffins.gif")
 ```
+
 `image_morph()` creates a gradient of images between each two images, allowing for smooth transitions.
 
 ### With `image_morph()`
@@ -113,7 +119,7 @@ image_morph(year) %>%
   image_animate(fps = 5, optimize = TRUE)
 ```
 <p align="center">
-  <img width="300" height="300" src="https://raw.githubusercontent.com/jmahr07/gbif/main/puffins/year_test.gif">
+  <img width="500" height="500" src="https://github.com/jmahr07/gbif/blob/main/puffins/puffins.gif?raw=true">
 </p>
 
 ### Without `image_morph()`
@@ -121,7 +127,7 @@ image_morph(year) %>%
 image_animate(year, fps = 5, optimize = TRUE)
 ```
 <p align="center">
-  <img width="300" height="300" src="https://github.com/jmahr07/gbif/blob/main/puffins/no_morph.gif?raw=true">
+  <img width="500" height="500" src="https://github.com/jmahr07/gbif/blob/main/puffins/no_morph.gif?raw=true">
 </p>
 
 ## Thoughts
