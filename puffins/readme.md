@@ -3,7 +3,7 @@
 
 ![Data visualization for the Puffins project showing a map of the north east United States and eartern Canada coastal waters with points indiciation recorded observations of Fratercula arctica. In gif format, the visualizations shows observations recorded each month. It is possible to discern an increase in observations in the far north during the summer months.](/puffins/puffins.gif)
 
-This was my first attempt at using [`map_fetch()`](https://docs.ropensci.org/rgbif/reference/map_fetch.html), a feature of the [`rgibf`](https://docs.ropensci.org/rgbif/index.html) package, to fetch maps of [GBIF](https://www.gbif.org) data. As `map_fetch()` outputs external pointers of class 'magick-image', I used the [`{magick}`](https://cran.r-project.org/web/packages/magick/vignettes/intro.html) package to handle the image processing, which includes the map annotations and stitching together the different images into gif. 
+This was my first attempt at using [`map_fetch()`](https://docs.ropensci.org/rgbif/reference/map_fetch.html), a feature of the [`rgibf`](https://docs.ropensci.org/rgbif/index.html) package, to fetch maps of [GBIF](https://www.gbif.org) data. As `map_fetch()` outputs external pointers of class 'magick-image', I used the [`magick`](https://cran.r-project.org/web/packages/magick/vignettes/intro.html) package to handle the image processing, which includes the map annotations and stitching together the different images into gif. 
 
 ## Discovering gifs
 Arriving at the gif format was somewhat of an accident. I had been making some test maps and had grouped two into a single value. Calling that value resulted in a preview slideshow that resembled a gif and got me to look into the `magick` package's `image_animate()` function.
