@@ -23,7 +23,7 @@ image_resize(year, '600') %>%
   <img src = "./graywhale_optimize.gif">
 </p>
 
-This results in a gif with a 152KB filesize. Setting `optimize` to FALSE removes these artifacts and results in a 344KB gif:
+This results in a gif with a 152KB filesize. Setting `optimize` to `FALSE` removes these artifacts and results in a 344KB gif:
 
 ``` r
 image_resize(year, '600') %>%
