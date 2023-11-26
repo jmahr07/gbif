@@ -6,3 +6,10 @@ Taking what I had learned through the [Puffin](/puffins) project and again relyi
 <p align = "center">
   <img src = "./graywhale.gif">
 </p>
+
+Followed the same process as in [Puffins](/puffins): 
+* Create maps for each month using `map_fetch()`
+* Add annotations with `image_annotate()`
+* Stiching them altogether in a gif with `image_animate`
+
+## Strange Artifacts
