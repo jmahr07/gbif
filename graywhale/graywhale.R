@@ -529,6 +529,6 @@ year <- c(jan, feb, mar, apr, may, jun, jul, aug, sep, oct, nov, dec)
 
 #Create and save .gif
 gif <- image_resize(year, '600') %>%
-  image_animate(fps = 2, optimize = TRUE)
+  image_animate(fps = 2, optimize = FALSE)
 
-image_write(gif, "graywhale.gif")
+image_write(gif, "graywhale_migration.gif")
