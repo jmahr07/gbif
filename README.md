@@ -15,7 +15,7 @@ Data visualization with data from [GBIF](https://www.gbif.org). Using [`rgbif`](
 
 ## Nov. 2023 - [Gray Whale Migration](graywhale/)
 <p align="center">
-  <img src="./graywhale/graywhale.gif">
+  <img src="./graywhale/graywhale_migration.gif">
 </p>
 
 ## Nov. 2023 - [Puffins](puffins/)
