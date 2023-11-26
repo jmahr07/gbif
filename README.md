@@ -5,7 +5,7 @@ Data visualization with data from [GBIF](https://www.gbif.org). Using [`rgbif`](
 
 ## Nov. 2023 - [Arctic Tern Migrations](terns/)
 <p align="center">
-  <img src="./terns/terns.gif">
+  <img src="./terns/tern.gif">
 </p>
 
 ## Nov. 2023 - [Monarch Butterfly Migration](monarchs/)
