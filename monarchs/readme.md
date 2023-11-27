@@ -137,4 +137,4 @@ jan <-
   image_composite(jan_png, jan_map, offset = "+250+250")
 ```
 
-Once completed for all months, the gif can be created (refer to Puffins(/puffins) for a more extensive description of this process).
+Once completed for all months, the gif can be created (refer to [Puffins](/puffins) for a more extensive description of this process).
