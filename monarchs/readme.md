@@ -1,7 +1,7 @@
 # Visualizing Monarch Butterfly Migrations with Human Observations
 #### Created: 2023-11-20
 
-Following a similar process to the [Gray Whale](/graywhales) and [Puffin](/puffins) project, using the `rgbif` and `magick` packages to visualize migration patterns. Here I also make use of `ggplot` to create a base layer to create more appealing annotations for the maps.
+Following a similar process to the [Gray Whale](/graywhales) and [Puffin](/puffins) project, using the `rgbif` and `magick` packages to visualize migration patterns. Here I also make use of `ggplot` to create a base layer for more appealing annotations.
 
 <p align = "center">
   <img  src = "https://github.com/jmahr07/gbif/blob/main/monarchs/monarch.gif?raw=true">
