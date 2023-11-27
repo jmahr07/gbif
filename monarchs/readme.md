@@ -4,7 +4,7 @@
 Following a similar process to the [Gray Whale](/graywhales) and [Puffin](/puffins) project, using the `rgbif` and `magick` packages to visualize migration patterns. Here I also make use of `ggplot` to create a base layer for more appealing annotations.
 
 <p align = "center">
-  <img  src = "https://github.com/jmahr07/gbif/blob/main/monarchs/monarch.gif?raw=true">
+  <img width = "500" height = "500"  src = "https://github.com/jmahr07/gbif/blob/main/monarchs/monarch.gif?raw=true">
 </p>
 
 ### Using `ggplot` for the base layer
@@ -115,7 +115,7 @@ jan_png <-
   image_read("jan_base.png")
 ```
 <p align = "center">
-  <img src = "https://github.com/jmahr07/gbif/blob/main/monarchs/jan_base.png?raw=true">
+  <img width = "500" height = "500" src = "https://github.com/jmahr07/gbif/blob/main/monarchs/jan_base.png?raw=true">
 </p>
 
 From here, the map can be created for the respective month using `map_fetch()`, and can then be added on top of the background with `image_composite`.
