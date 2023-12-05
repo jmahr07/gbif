@@ -1,14 +1,17 @@
 # Visualizing Monarch Butterfly Migrations with Human Observations
-#### Created: 2023-11-20
+**Created: 2023-11-20**
 
-Following a similar process to the [Gray Whale](/graywhales) and [Puffin](/puffins) project, using the `rgbif` and `magick` packages to visualize migration patterns. Here I also make use of `ggplot` to create a base layer for more appealing annotations.
+![Visualization showing monarch observations per month across across North America. Red circles on the map indicate location and quantity of monarch observations. During the summer, observations are noted across the United States and into Canada. In the winter months, observations are mainly constrained to Mexico and the very southern United States.](./monarch.gif)
 
-<p align = "center">
-  <img width = "500" height = "500"  src = "https://github.com/jmahr07/gbif/blob/main/monarchs/monarch.gif?raw=true">
-</p>
+###### Packages: [`rgbif`](https://github.com/ropensci/rgbif) |  [`magick`](https://github.com/ropensci/magick) | [`ggplot` & `tidyverse`](https://github.com/tidyverse)
+###### Code: [monarchs.R](./monarchs.R)
+###### Other Links: [GBIF](https://www.gbif.org) | [`map_fetch()`](https://data-blog.gbif.org/post/2023-03-24-maps-api/)
+
+___
+## Some Thoughts
+Following a similar process to the [Gray Whale](/graywhale) and [Puffin](/puffins) project, using the `rgbif` and `magick` packages to visualize migration patterns. Here, I also make use of `ggplot` to create a base layer for more appealing annotations.
 
 ### Using `ggplot` for the base layer
-
 As `magick`'s `image_annotate()` function has limited capabilities, I used `ggplot` to create a base layer that was more customizable. This involved setting values for the base `geom_rect()` as well as a tibble with values to place the labels for each month and to bold the respective month through `geom_text`. Additional values were added to define the title and caption aesthetics.
 
 ``` r
@@ -114,9 +117,8 @@ ggsave("jan_base.png", jan_base, width = 1524, height = 1524, units = "px")
 jan_png <- 
   image_read("jan_base.png")
 ```
-<p align = "center">
-  <img width = "500" height = "500" src = "https://github.com/jmahr07/gbif/blob/main/monarchs/jan_base.png?raw=true">
-</p>
+
+![The base layer for the monarch visualizations. A cream colored square with the title, caption, and label indicating the month for the specific map, which is to be added later.](./jan_base.png)
 
 From here, the map can be created for the respective month using `map_fetch()`, and can then be added on top of the background with `image_composite`.
 
