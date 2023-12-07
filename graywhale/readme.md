@@ -1,10 +1,10 @@
 # Visualizing Gray Whale Migrations Through Human Observation
-**Created: 2023-11-18**
+**Created:: 2023-11-18**
 
 ![Visualizations of gray whale migrations based on human observations. A map showing the western North America with blue circles indicating location and volume of gray whale observations. The gif proceeds through the 12 months of the year, showing observations around Alaska in the later summer, and a gradual migration down to Mexico in the winter months.](./graywhale_migration.gif)
 
 ###### Packages: [`rgbif`](https://github.com/ropensci/rgbif) |  [`magick`](https://github.com/ropensci/magick)
-###### Code: [graywhale.R](graywhale.R)
+###### Code:: [graywhale.R](graywhale.R)
 ###### Other Links: [GBIF](https://www.gbif.org) | [`map_fetch()`](https://data-blog.gbif.org/post/2023-03-24-maps-api/)
 
 ___
