@@ -1,10 +1,10 @@
 # Arctic Tern Migrations Visualized Through Reported Observations
-**Created: 2023-11-24**
+**Created:: 2023-11-24**
 
 ![Visualizing for the Arctic Terns project showing two maps of the world. On the left we see the Earth from the north pole, and on the right we see it from the south pole. The gif animation cycles through the months of the year, and circles are displayed on each map to indicate the location and quantity of arctic tern observations. In the summer months, there are peaks in observations around the North Pole and across the northern hemisphere. During the winter months, observations appear more commonly in the southern hemisphere.](./terns.gif)
 
 ###### Packages: [`rgbif`](https://github.com/ropensci/rgbif) | [`magick`](https://github.com/ropensci/magick) | [`tidyverse` & `ggplot`](https://github.com/tidyverse) | [`cowplot`](https://github.com/wilkelab/cowplot)
-###### Code: [terns.R](./terns.R)
+###### Code:: [terns.R](./terns.R)
 ###### Other Links: [GBIF](https://www.gbif.org) | [`map_fetch()`](https://data-blog.gbif.org/post/2023-03-24-maps-api/)
 
 ___
