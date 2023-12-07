@@ -1,10 +1,10 @@
 # Visualizing Monarch Butterfly Migrations with Human Observations
-**Created: 2023-11-20**
+**Created:: 2023-11-20**
 
 ![Visualization showing monarch observations per month across across North America. Red circles on the map indicate location and quantity of monarch observations. During the summer, observations are noted across the United States and into Canada. In the winter months, observations are mainly constrained to Mexico and the very southern United States.](./monarch.gif)
 
 ###### Packages: [`rgbif`](https://github.com/ropensci/rgbif) |  [`magick`](https://github.com/ropensci/magick) | [`ggplot` & `tidyverse`](https://github.com/tidyverse)
-###### Code: [monarchs.R](./monarchs.R)
+###### Code:: [monarchs.R](./monarchs.R)
 ###### Other Links: [GBIF](https://www.gbif.org) | [`map_fetch()`](https://data-blog.gbif.org/post/2023-03-24-maps-api/)
 
 ___
