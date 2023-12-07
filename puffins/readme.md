@@ -1,10 +1,10 @@
 # Visualizing Puffin Migrations
-**Created: 2023-11-17**
+**Created:: 2023-11-17**
 
 ![Visualization showing a map of the northeastern United States and eastern Canada, as well as the southern tip of Greenland. Circles on the map identify locations where Puffins have been observed in a given month. As the gif progresses through the months, it is possible to discern greater numbers of puffins in the far north during the summer months, and a retreat south in the winter months.](./puffins.gif)
 
 ###### Packages: [`rgbif`](https://github.com/ropensci/rgbif) |  [`magick`](https://github.com/ropensci/magick)
-###### Code: [puffins.R](./puffins.R)
+###### Code:: [puffins.R](./puffins.R)
 ###### Other Links: [GBIF](https://www.gbif.org) | [`map_fetch()`](https://data-blog.gbif.org/post/2023-03-24-maps-api/)
 
 ___
